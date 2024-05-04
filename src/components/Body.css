@@ -1,0 +1,29 @@
+/* Body.css */
+
+.bg-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .bg-container > div {
+    transition: transform 0.3s ease-in-out; /* Add smooth transition */
+    margin: 10px; /* Add margin between cards */
+  }
+  
+  .bg-container > div:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  
+  .bg-container > div > div {
+    width: 100%;
+  }
+  
+  .bg-container > div > div > img {
+    width: 1000px; /* Ensure image fills its container */
+    height: 563px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+  }
+  

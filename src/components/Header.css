@@ -1,0 +1,57 @@
+/* Header.css */
+
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the start and end of the header */
+    align-items: center;
+  }
+  
+  .title-and-rent {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title-and-rent h1 {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  
+    .header-button {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Makes button slightly rounded */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .order-button {
+    background-color: transparent; /* Transparent background initially */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  }
+  
+  .order-button:hover {
+    background-color: #ffffff; /* Change background color on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  }
+  
+  .order-button img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .header-button:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  

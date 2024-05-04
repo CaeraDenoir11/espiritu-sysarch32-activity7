@@ -1,0 +1,37 @@
+/* index.css */
+
+/* Apply CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply global styles */
+  body {
+    font-family: 'Arial', sans-serif; /* Use a modern font family */
+    background-color: #ecebeb; /* Set background color */
+    overflow-y: scroll; /* Allow vertical scrolling */
+  }
+  
+  /* Center content vertically and horizontally */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height of container to full viewport height */
+  }
+  
+  /* Adjust width of main content */
+  .main-content {
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px; /* Set maximum width */
+  }
+  
+  /* Optional: Apply responsive styles */
+  @media screen and (max-width: 768px) {
+    .main-content {
+      width: 95%; /* Adjust width for smaller screens */
+    }
+  }
+  

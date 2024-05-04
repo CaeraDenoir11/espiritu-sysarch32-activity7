@@ -1,0 +1,216 @@
+/* FeaturedWaifus.css */
+.body{
+  padding: 10px;
+  margin: 10px;
+}
+.card-container {
+  display: flex; /* Display cards horizontally */
+  flex-wrap: wrap; /* Allow wrapping to multiple lines */
+  justify-content: flex-start;
+}
+/* Card styles */
+.card {
+  width: 300px; /* Adjust the width as needed */
+  height: auto; /* Set height to auto */
+  margin-right: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px; /* Add margin to create space between cards */
+  position: relative; /* Make the card position relative */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px; /* Add padding to separate text from border */
+}
+
+/* Image styles */
+.card-image {
+  width: 100%;
+  padding: 10px;
+  height: 300px; /* Set a fixed height for the image */
+  overflow: hidden;
+  position: relative; /* Make the image container position relative */
+  background-size: cover; /* Adjust background size to cover the container */
+  background-position: center; /* Center the background image */
+}
+
+.card-img {
+  width: 100%;
+  height: 100%; /* Adjust height to fill the container */
+  object-fit: cover;
+}
+
+/* Button container styles */
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  opacity: 0; /* Initially hide buttons */
+  transition: opacity 0.3s ease; /* Add transition for smooth visibility */
+}
+
+/* Button styles */
+.order-button,
+.info-button {
+  width: 40px; /* Set button width */
+  height: 40px; /* Set button height */
+  border-radius: 50%; /* Make button circular */
+  border: none; /* Remove border */
+  background-color: white; /* Change background color */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Add transition for smooth inflation */
+}
+
+/* Show buttons on card hover */
+.card:hover .button-container {
+  opacity: 1;
+}
+
+/* Change button background and inflate on hover */
+.order-button:hover,
+.info-button:hover {
+  transform: scale(1.1); /* Inflate button slightly */
+}
+
+.order-button img,
+.info-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Details styles */
+.card-details {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/*Modal*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  width: 80%;
+  max-width: 600px;
+  padding: 30px 20px 30px 20px;
+  border-radius: 8px;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  left: 69%;
+  width: 40px; /* Adjust button width */
+  height: 40px; /* Adjust button height */
+  background-color: 0 0 10px rgba(39, 38, 38, 0.3);
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button:hover {
+  box-shadow: 0 0 10px rgba(66, 66, 66, 0.3); /* Adds shadow on hover */
+  color: #fff;
+  background-color: #333;
+}
+
+.close-button::before {
+  font-size: 20px; /* Adjust font size */
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.waifu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  margin-top: 10px;
+}
+
+.waifu-image-large {
+  width: 70%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.waifu-details h3{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.waifu-details h4{
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.waifu-details p{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.waifu-image-small {
+  width: 75px;
+  height: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.waifu-image-small:hover {
+  box-shadow: 0 0 10px 5px black; /* Adding black box-shadow on hover */
+}
